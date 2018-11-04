@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: example-grpc-ingress
+  annotations:
+    kubernetes.io/ingress.allow-http: "false"
+  labels:
+    app: example-grpc
+spec:
+  tls:
+  - hosts:
+    - localhost # You can ignore this, unless you're using a non-self-signed certificate in "ingress-secret.yaml" manifest.
+    secretName: example-grpc-secret-localhost
+  backend:
+    serviceName: example-grpc-nodeport
+    servicePort: 8080

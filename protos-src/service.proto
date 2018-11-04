@@ -1,0 +1,9 @@
+syntax = "proto3";
+option go_package = "protos";
+package example.gke.grpc;
+
+import "google/protobuf/empty.proto";
+
+service ExampleService {
+    rpc SayHello (google.protobuf.Empty) returns (google.protobuf.Empty) {}
+}

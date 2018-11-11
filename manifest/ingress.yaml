@@ -4,6 +4,7 @@ metadata:
   name: example-grpc-ingress
   annotations:
     kubernetes.io/ingress.allow-http: "false"
+#    kubernetes.io/ingress.global-static-ip-name: example-grpc-ipv4 # You can uncomment and adjust this line if you're not using Let's Encrypt.
   labels:
     app: example-grpc
 spec:

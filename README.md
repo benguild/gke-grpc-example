@@ -1,7 +1,7 @@
 # gke-grpc-example
 Example of how to deploy gRPC (or a plain HTTP/2 server) on Google Kubernetes Engine on Google Cloud Platform that's compatible with Let's Encrypt for HTTPS/TLS at the load balancer level.
 
-https://benguild.com
+https://benguild.com/2018/11/11/quickstart-golang-kubernetes-grpc-tls-lets-encrypt/
 
 ## Setup instructions
 
